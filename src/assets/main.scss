@@ -1,30 +1,38 @@
+@import "../../node_modules/@picocss/pico/scss/pico";
+@import "./picoVars.scss";
 @import "./base.scss";
 @import "./dh-common/dh-main";
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0rem;
   font-weight: normal;
   height: 100vh;
+  //
   display: flex;
   flex-direction: column;
 }
 
 header, footer {
   padding: 0.5rem 1.5rem;
-  color: white;
-  background: $col-main;
+  color: $primary-white;
+  background: transparentize($primary-700, .5);
+  border-radius: 20px;
 }
 
 header {
   //
 }
 main {
-  background: whitesmoke;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   flex-grow: 1;
 }
+
+aside {
+  flex-basis: 30%;
+}
+
 footer {
   //
 }

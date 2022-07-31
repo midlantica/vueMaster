@@ -4,7 +4,6 @@
 
 <template>
   <div class="container">
-    <button>Button</button>
     <header>
       <h1>VueMaster</h1>
     </header>

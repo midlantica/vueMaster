@@ -1,16 +1,42 @@
 <script setup>
   import { ref } from "vue";
-  const product = ref("Boots")
+const product = ref([
+  "Boots", "Hips", "Flips", "Chicks"
+])
+const data = {
+  objectItems: {
+    key1: 'item1',
+    key2: 'item2',
+    key3: 'item3'
+  },
+  shoppingItems: [
+    { name: 'apple', price: '7' },
+    { name: 'orange', price: '12' }
+  ]
+}
+
 
 </script>
 
 <template>
   <div class="product-display">
     <div class="flexRow gap1">
-      <div class="w30">
-        <h1 class="mar0">{{product}}</h1>
-      </div>
-      <div class="">
+      <aside>
+        <nav>
+          <ul>
+            <li v-for="item in product"><a href="#">{{item}}</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="padR1">
+
+        <div>
+          <hgroup>
+            <h2>Lorem ipsum dolor sit</h2>
+            <h3>Lorem ipsum dolor sit</h3>
+          </hgroup>
+          <p>amet consectetur adipisicing elit. Nobis quae animi quod facere ex delectus libero eius quasi distinctio, praesentium, incidunt et accusamus neque magni aliquam quam necessitatibus? Fugit, maxime?</p>
+        </div>
 
         <form>
 
@@ -40,16 +66,7 @@
 
         </form>
 
-        <article>
-          <header>Header</header>
-          Body
-          <footer>Footer</footer>
-        </article>
 
-        <div>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>amet consectetur adipisicing elit. Nobis quae animi quod facere ex delectus libero eius quasi distinctio, praesentium, incidunt et accusamus neque magni aliquam quam necessitatibus? Fugit, maxime?</p>
-        </div>
       </div>
     </div>
   </div>
