@@ -1,0 +1,30 @@
+@import "./base.scss";
+@import "./dh-common/dh-main";
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  font-weight: normal;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background: $col-main;
+}
+
+header {
+  //
+}
+main {
+  background: whitesmoke;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+}
+footer {
+  //
+}
