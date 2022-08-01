@@ -1,6 +1,4 @@
 <script setup>
-  let theme = "light"
-
   const toggleTheme = () => {
     let targetTheme = "light"
     const currentTheme = document.documentElement.getAttribute("data-theme")
@@ -30,7 +28,7 @@
     width: 1.7rem;
     height: $width;
     z-index: 100;
-    top: 1rem;
+    top: 1.75rem;
     right: 1rem;
   }
 
@@ -67,11 +65,11 @@
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--teal-900);
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--teal-900);
   }
 
   input:checked + .slider:before {

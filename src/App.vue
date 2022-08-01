@@ -19,22 +19,27 @@ import Switch from './components/Switch.vue';
 </template>
 
 <style lang="scss">
-  $green: hsl(150deg 76% 26%);
-  $blue: hsl(200, 100%, 50%);
-
   header, footer {
     padding: 0.5rem 1.5rem;
-    // color: whitesmoke;
+    color: var(--primary-inverse);
     background: var(--primary);
     border-radius: 10px;
+    position: sticky;
+    z-index: 10;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   header {
-    //
+    top: 1rem;
+    height: 5rem;
+
   }
   main {
-    padding: 1rem 0;
-    flex-grow: 1;
+    margin: 2rem 0 2rem;
+    overflow-y: auto;
+    height: 57%;
   }
 
   aside {
@@ -43,13 +48,7 @@ import Switch from './components/Switch.vue';
   }
 
   footer {
-    //
+    bottom: 1rem;
+    height: 3rem;
   }
-
-  // header, footer {
-  //   background: $green;
-  //   background: -moz-linear-gradient(0deg, $green 20%, $blue 100%);
-  //   background: -webkit-linear-gradient(0deg, $green 20%, $blue 100%);
-  //   background: linear-gradient(0deg, $green 20%, $blue 100%);
-  // }
 </style>
