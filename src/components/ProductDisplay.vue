@@ -13,7 +13,7 @@
       <aside>
         <nav>
           <ul>
-            <li v-for="item in product"><a href="#">{{item}}</a></li>
+            <li class="marBH" v-for="item in product"><a href="#">{{item}}</a></li>
           </ul>
         </nav>
       </aside>
@@ -42,9 +42,9 @@
           <input type="email" id="email" name="email" placeholder="Email address" required>
           <small>We'll never share your email with anyone else.</small>
           <!-- Button -->
-          <button role="button">Submit</button>
-          <button>Button</button>
-          <input type="submit">
+          <div class="flexRow just-flex-end">
+            <button role="button" class="">Submit</button>
+          </div>
 
         </form>
       </div>
@@ -53,5 +53,21 @@
 </template>
 
 <style lang="scss" scoped>
+  aside {
+    //
+
+    ul {
+      margin: 0 !important;
+
+      li {
+        //
+
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
 
 </style>

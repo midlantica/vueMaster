@@ -1,6 +1,5 @@
 @import "../../node_modules/@picocss/pico/scss/pico";
 @import "./picoVars.scss";
-// @import "./base.scss";
 @import "./dh-common/dh-main";
 @import "./switch.scss";
 
@@ -34,4 +33,11 @@ body {
   //
   display: flex;
   flex-direction: column;
+}
+
+button {
+  width: initial;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 600 !important;
 }
