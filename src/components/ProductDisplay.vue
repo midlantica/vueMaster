@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <div class="flexRow gap1">
+  <!-- <div class="flexRow gap1"> -->
     <aside>
       <nav>
         <ul>
@@ -16,7 +16,7 @@
         </ul>
       </nav>
     </aside>
-    <div class="padR1">
+    <div class="content">
       <div>
         <h2>Lorem ipsum dolor sit</h2>
         <p>amet consectetur adipisicing elit. Nobis quae animi quod facere ex delectus libero eius quasi distinctio, praesentium, incidunt et accusamus neque magni aliquam quam necessitatibus? Fugit, maxime?</p>
@@ -47,15 +47,15 @@
 
       </form>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <style lang="scss" scoped>
   aside {
-    //
+    // position: sticky;
 
     ul {
-      margin: 0 !important;
+      // margin: 0 !important;
 
       li {
         //
@@ -66,6 +66,13 @@
       }
     }
 
+  }
+
+  .content {
+    width: calc(100% - 13rem);
+    // margin-left: 13rem;
+    margin-right: 2rem;
+    align-self: flex-end;
   }
 
 </style>
