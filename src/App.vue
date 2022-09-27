@@ -1,6 +1,6 @@
 <script setup>
-import ProductDisplay from './components/ProductDisplay.vue';
-import Switch from './components/Switch.vue';
+  import ProductDisplay from './components/ProductDisplay.vue';
+  import Switch from './components/Switch.vue';
 </script>
 
 <template>
